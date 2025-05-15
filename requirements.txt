@@ -1,0 +1,44 @@
+# =======================================================================
+# BitFalcon project dependencies (Python 3.10 / CUDA 12.8)
+# =======================================================================
+# NOTE:
+#  1. PyTorch CUDA wheels are hosted on the official extra index below.
+#  2. Keep this line *first* so pip resolves CUDA 12.8 variants correctly.
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+# --- Core Deep‑Learning stack (CUDA 12.8) -------------------------------
+torch==2.7.0+cu128
+torchvision==0.22.0+cu128
+torchaudio==2.7.0+cu128
+
+# --- BitNet / Quantization ---------------------------------------------
+bitlinear-pytorch==0.5.0          # 1.58‑bit BitLinear layer implementation
+
+# --- Computer Vision ----------------------------------------------------
+opencv-python-headless>=4.10.0
+kornia>=0.8.1                     # differentiable CV ops
+timm>=1.0.1                       # vision transformer utilities
+
+# --- Tracking & Filtering ----------------------------------------------
+filterpy==1.4.5                   # SORT / Kalman utilities
+
+# --- Face analysis ------------------------------------------------------
+deepface>=0.0.86
+
+# --- Data wrangling / general ------------------------------------------
+numpy>=1.24
+pandas>=2.1
+pillow>=10.0
+scipy>=1.11
+pyyaml>=6.0
+tqdm>=4.66
+matplotlib>=3.8
+packaging>=24.0
+
+# --- Optional performance extras ---------------------------------------
+# onnxruntime-gpu>=1.18.0          # optional: export & run ONNX on GPU
+# tensorrt>=10.0.0                 # optional: TensorRT acceleration
+
+# =======================================================================
+# End of file
+# =======================================================================

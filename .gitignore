@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Environment variables
+.env
+.env.*
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyTorch model files
+*.pt
+*.pth
+
+# Debug logs
+*.log
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# User requested exclusions
+*.env
+venv/
+.venv/
+
+# Training artifacts
+runs/
+wandb/
+
+# Large data files and models
+data/
+*.zip
+*.tar
+*.gz
+
+# Personal config overrides
+config_local.yaml
